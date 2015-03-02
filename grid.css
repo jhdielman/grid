@@ -1,0 +1,158 @@
+﻿/* Resets */
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Grid */
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.column {
+    display: table-cell;
+}
+
+.row > .column,
+.row.one > .column  { width: 100%; }
+
+.row.two > .column  { width: 50%; }
+
+.row.three > .column        { width: calc(100%/3); }
+.row.three > .column.two    { width: calc(2*(100%/3)); }
+
+.row.four > .column         { width: 25%; }
+.row.four > .column.two     { width: 50%; }
+.row.four > .column.three   { width: 75%; }
+
+.row.five > .column         { width: 20%; }
+.row.five > .column.two     { width: 40%; }
+.row.five > .column.three   { width: 60%; }
+.row.five > .column.four    { width: 80%; }
+
+.row.six > .column          { width: calc(100%/6); }
+.row.six > .column.two      { width: calc(2*(100%/6)); }
+.row.six > .column.three    { width: calc(3*(100%/6)); }
+.row.six > .column.four     { width: calc(4*(100%/6)); }
+.row.six > .column.five     { width: calc(5*(100%/6)); }
+
+.row.seven > .column        { width: calc(100%/7); }
+.row.seven > .column.two    { width: calc(2*(100%/7)); }
+.row.seven > .column.three  { width: calc(3*(100%/7)); }
+.row.seven > .column.four   { width: calc(4*(100%/7)); }
+.row.seven > .column.five   { width: calc(5*(100%/7)); }
+.row.seven > .column.six    { width: calc(6*(100%/7)); }
+
+.row.eight > .column        { width: calc(100%/8); }
+.row.eight > .column.two    { width: calc(2*(100%/8)); }
+.row.eight > .column.three  { width: calc(3*(100%/8)); }
+.row.eight > .column.four   { width: calc(4*(100%/8)); }
+.row.eight > .column.five   { width: calc(5*(100%/8)); }
+.row.eight > .column.six    { width: calc(6*(100%/8)); }
+.row.eight > .column.seven  { width: calc(7*(100%/8)); }
+
+
+.row.nine > .column         { width: calc(100%/9); }
+.row.nine > .column.two     { width: calc(2*(100%/9)); }
+.row.nine > .column.three   { width: calc(3*(100%/9)); }
+.row.nine > .column.four    { width: calc(4*(100%/9)); }
+.row.nine > .column.five    { width: calc(5*(100%/9)); }
+.row.nine > .column.six     { width: calc(6*(100%/9)); }
+.row.nine > .column.seven   { width: calc(7*(100%/9)); }
+.row.nine > .column.eight   { width: calc(8*(100%/9)); }
+
+.row.ten > .column          { width: 10%; }
+.row.ten > .column.two      { width: calc(100%/10); }
+.row.ten > .column.three    { width: calc(100%/10); }
+.row.ten > .column.four     { width: calc(100%/10); }
+.row.ten > .column.five     { width: calc(100%/10); }
+.row.ten > .column.six      { width: calc(100%/10); }
+.row.ten > .column.seven    { width: calc(100%/10); }
+.row.ten > .column.eight    { width: calc(100%/10); }
+.row.ten > .column.nine     { width: calc(100%/10); }
+
+.row.eleven > .column       { width: calc(100%/11); }
+.row.eleven > .column.two   { width: calc(2*(100%/11)); }
+.row.eleven > .column.three { width: calc(3*(100%/11)); }
+.row.eleven > .column.four  { width: calc(4*(100%/11)); }
+.row.eleven > .column.five  { width: calc(5*(100%/11)); }
+.row.eleven > .column.six   { width: calc(6*(100%/11)); }
+.row.eleven > .column.seven { width: calc(7*(100%/11)); }
+.row.eleven > .column.eight { width: calc(8*(100%/11)); }
+.row.eleven > .column.nine  { width: calc(9*(100%/11)); }
+.row.eleven > .column.ten   { width: calc(10*(100%/11)); }
+
+.row.twelve > .column           { width: calc(100%/12); }
+.row.twelve > .column.two       { width: calc(2*(100%/12)); }
+.row.twelve > .column.three     { width: calc(3*(100%/12)); }
+.row.twelve > .column.four      { width: calc(4*(100%/12)); }
+.row.twelve > .column.five      { width: calc(5*(100%/12)); }
+.row.twelve > .column.six       { width: calc(6*(100%/12)); }
+.row.twelve > .column.seven     { width: calc(7*(100%/12)); }
+.row.twelve > .column.eight     { width: calc(8*(100%/12)); }
+.row.twelve > .column.nine      { width: calc(9*(100%/12)); }
+.row.twelve > .column.ten       { width: calc(10*(100%/12)); }
+.row.twelve > .column.eleven    { width: calc(11*(100%/12)); }
+
+.row.thirteen > .column         { width: calc(100%/13); }
+.row.thirteen > .column.two     { width: calc(2*(100%/13)); }
+.row.thirteen > .column.three   { width: calc(3*(100%/13)); }
+.row.thirteen > .column.four    { width: calc(4*(100%/13)); }
+.row.thirteen > .column.five    { width: calc(5*(100%/13)); }
+.row.thirteen > .column.six     { width: calc(6*(100%/13)); }
+.row.thirteen > .column.seven   { width: calc(7*(100%/13)); }
+.row.thirteen > .column.eight   { width: calc(8*(100%/13)); }
+.row.thirteen > .column.nine    { width: calc(9*(100%/13)); }
+.row.thirteen > .column.ten     { width: calc(10*(100%/13)); }
+.row.thirteen > .column.eleven  { width: calc(11*(100%/13)); }
+.row.thirteen > .column.twelve  { width: calc(12*(100%/13)); }
+
+.row.fourteen > .column             { width: calc(100%/14); }
+.row.fourteen > .column.two         { width: calc(2*(100%/14)); }
+.row.fourteen > .column.three       { width: calc(3*(100%/14)); }
+.row.fourteen > .column.four        { width: calc(4*(100%/14)); }
+.row.fourteen > .column.five        { width: calc(5*(100%/14)); }
+.row.fourteen > .column.six         { width: calc(6*(100%/14)); }
+.row.fourteen > .column.seven       { width: calc(7*(100%/14)); }
+.row.fourteen > .column.eight       { width: calc(8*(100%/14)); }
+.row.fourteen > .column.nine        { width: calc(9*(100%/14)); }
+.row.fourteen > .column.ten         { width: calc(10*(100%/14)); }
+.row.fourteen > .column.eleven      { width: calc(11*(100%/14)); }
+.row.fourteen > .column.twelve      { width: calc(12*(100%/14)); }
+.row.fourteen > .column.thirteen    { width: calc(13*(100%/14)); }
+
+.row.fifteen > .column          { width: calc(100%/15); }
+.row.fifteen > .column.two      { width: calc(2*(100%/15)); }
+.row.fifteen > .column.three    { width: calc(3*(100%/15)); }
+.row.fifteen > .column.four     { width: calc(4*(100%/15)); }
+.row.fifteen > .column.five     { width: calc(5*(100%/15)); }
+.row.fifteen > .column.six      { width: calc(6*(100%/15)); }
+.row.fifteen > .column.seven    { width: calc(7*(100%/15)); }
+.row.fifteen > .column.eight    { width: calc(8*(100%/15)); }
+.row.fifteen > .column.nine     { width: calc(9*(100%/15)); }
+.row.fifteen > .column.ten      { width: calc(10*(100%/15)); }
+.row.fifteen > .column.eleven   { width: calc(11*(100%/15)); }
+.row.fifteen > .column.twelve   { width: calc(12*(100%/15)); }
+.row.fifteen > .column.thirteen { width: calc(13*(100%/15)); }
+.row.fifteen > .column.fourteen { width: calc(14*(100%/15)); }
+
+.row.sixteen > .column          { width: calc(100%/16); }
+.row.sixteen > .column.two      { width: calc(2*(100%/16)); }
+.row.sixteen > .column.three    { width: calc(3*(100%/16)); }
+.row.sixteen > .column.four     { width: calc(4*(100%/16)); }
+.row.sixteen > .column.five     { width: calc(5*(100%/16)); }
+.row.sixteen > .column.six      { width: calc(6*(100%/16)); }
+.row.sixteen > .column.seven    { width: calc(7*(100%/16)); }
+.row.sixteen > .column.eight    { width: calc(8*(100%/16)); }
+.row.sixteen > .column.nine     { width: calc(9*(100%/16)); }
+.row.sixteen > .column.ten      { width: calc(10*(100%/16)); }
+.row.sixteen > .column.eleven   { width: calc(11*(100%/16)); }
+.row.sixteen > .column.twelve   { width: calc(12*(100%/16)); }
+.row.sixteen > .column.thirteen { width: calc(13*(100%/16)); }
+.row.sixteen > .column.fourteen { width: calc(14*(100%/16)); }
+.row.sixteen > .column.fifteen  { width: calc(15*(100%/16)); }

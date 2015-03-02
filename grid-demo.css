@@ -1,0 +1,16 @@
+﻿.column {
+    height: 30px;
+    border-left: 1px solid #777777;
+    text-align: center;
+    vertical-align: middle;
+}
+.row > .column:last-of-type {
+    border-right: 1px solid #777777;
+}
+.row {
+    border-top: 1px solid #777777;
+}
+
+.rows .row:last-of-type {
+    border-bottom: 1px solid #777777;
+}
