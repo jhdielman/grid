@@ -1,0 +1,55 @@
+// SASS Responsive Grid
+// --------------------------------------------
+// Sass (v3.4.12)
+// Compass (v1.0.3)
+// --------------------------------------------
+
+$columns: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen;
+$col-len: length($columns);
+$break-points: 320, 480, 640;
+$break-point-len: length($break-points);
+
+/* Standard Columns */
+.row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.column {  display: table-cell; }
+
+@for $i from 1 through $col-len {
+  
+  $cols: nth($columns, $i);
+  $row-class: ".row.#{$cols}";
+  $col-class: ".column";
+  $sub-col-len: $i - 1;
+  
+  @if $i == 1 {
+    
+    $row-class: ".row > .column, #{$row-class}";
+    $class: "#{$row-class} > #{$col-class}";
+    #{$row-class} > #{$col-class} { width: 100%; }
+    
+  } @else {
+    
+    @for $j from 1 through $sub-col-len {
+      
+      @if $j > 1 {
+        $nested-cols: nth($columns, $j);
+        $col-class: ".column.#{$nested-cols}";
+      }
+      
+      #{$row-class} > #{$col-class} { width: 100% * ($j/$i); }
+    }
+  }
+}
+
+
+/* Stacked Columns */
+@each $bp in $break-points {
+  $row-sel: ".stack-#{$bp}.row";
+  $col-sel: "#{$row-sel} > .column";
+  @media (max-width: #{$bp}px) {
+    #{$row-sel}, #{$col-sel} { display: block; width: 100%; }
+  }
+}
