@@ -49,21 +49,36 @@ In the SASS doc you can edit the `$break-points` list to define at which screen 
 Currently: `$break-points: 320, 480, 640;`
 
 ```scss
-$break-points: 321, 481, 641;
+$break-points: 320, 480, 640;
 // or
-$break-points: 769, 961, 1025;
+$break-points: 768, 960, 1024;
 // or, again, what ever works for your project...
 ```
 
 ### Stacking columns
-You can add a class of `stack-at-[break-point]` to make your grid responsive or add a class of `grid-at-[break-point]` for mobile first,
-where `[break-point]` is one of the defined breakpoints in SASS.
-Adding this class will make the columns stack and span 100% at or under the specified `[break-point]`.
-The example below will stack the columns when the screen is at or under 320px.
+You can add a class of `stack-at-[break-point]` to make your grid responsive or add a class of `grid-at-[break-point]` for mobile first, where `[break-point]` is one of the defined breakpoints in SASS.
+Class `stack-at-[break-point]` will make the columns stack and stretch 100% at or under the specified `[break-point]`.
+Class `grid-at-[break-point]` will default to stacked and set the grid at or above the specified `[break-point]`.
 
+#### The columns will stack when the screen is at or under 320px.
 ```html
-<div class="row five stack-320">
+<div class="row five stack-at-320">
 	<div class="column two"></div>
 	<div class="column three"></div>
 </div>
 ```
+
+#### The columns will become a grid layout when the screen is at or above 320px.
+```html
+<div class="row five grid-at-320">
+	<div class="column two"></div>
+	<div class="column three"></div>
+</div>
+
+
+#### The columns will always be set as a grid layout.
+```html
+<div class="row five">
+	<div class="column two"></div>
+	<div class="column three"></div>
+</div>
