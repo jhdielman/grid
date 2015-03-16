@@ -60,7 +60,7 @@ You can add a class of `stack-at-[break-point]` to make your grid responsive or 
 Class `stack-at-[break-point]` will make the columns stack and stretch 100% at or under the specified `[break-point]`.
 Class `grid-at-[break-point]` will default to stacked and set the grid at or above the specified `[break-point]`.
 
-#### The columns will stack when the screen is at or under 320px.
+##### The columns will stack when the screen is at or under 320px.
 ```html
 <div class="row five stack-at-320">
 	<div class="column two"></div>
@@ -68,17 +68,18 @@ Class `grid-at-[break-point]` will default to stacked and set the grid at or abo
 </div>
 ```
 
-#### The columns will become a grid layout when the screen is at or above 320px.
+##### The columns will become a grid layout when the screen is at or above 320px.
 ```html
 <div class="row five grid-at-320">
 	<div class="column two"></div>
 	<div class="column three"></div>
 </div>
+```
 
-
-#### The columns will always be set as a grid layout.
+##### The columns will always be set as a grid layout.
 ```html
 <div class="row five">
 	<div class="column two"></div>
 	<div class="column three"></div>
 </div>
+```
