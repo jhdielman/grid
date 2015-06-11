@@ -17,7 +17,7 @@ $mobile-first: false;
       table-layout: fixed;
       width: 100%;
   }
-  #{$prefix}.row .column { display: table-cell; }
+  #{$prefix}.row > .column { display: table-cell; }
 
   @for $i from 1 through $col-len {
     $cols: nth($columns, $i);
